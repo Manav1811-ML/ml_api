@@ -1,6 +1,12 @@
 # ml_api
 
 
+"""
+Created on Fri Apr  4 01:15:16 2025
+
+@author: Asus
+"""
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 import pickle
@@ -51,4 +57,3 @@ def diabetes_pred(input_parameters : model_input):
     
     else:
         return 'The person is Diabetic'
-
